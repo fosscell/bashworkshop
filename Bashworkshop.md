@@ -23,8 +23,6 @@ ls   - List the files in the current directory, and (optionally) their character
 
     Examples:
 
-    ls
-        list just the names of the files in the current directory
     ls -l
         (long) list the files with their characteristics (size, privs, owner, etc)
     ls -a
@@ -39,8 +37,6 @@ cp   - Copy a file (or directory).
 
     Examples:
 
-    cp foo bar
-        copy a file named "foo" (in the current directory); name the copy "bar"
     cp foo ~/Documents/bar
         copy a file named "a" (in the current directory) into your Documents directory and name the copy "bar"
     cp *.jpg ~/Documents
@@ -66,21 +62,6 @@ mkdir   - Make directory - equivalent to the Finder's New Folder command.
     mkdir foo
         Create a new directory named "foo" 
 
-chmod   - Change protection mode on files and folders. It's rather complex, so read the man page before using. You must own the files (or be root) to change their protections.
-
-    Examples:
-
-    chmod u+w foo
-        Allow the user (file owner) write access to the file or folder named "foo"
-    chmod u-r foo
-        Disallow the user (file owner) read access to "foo"
-    chmod ug+x foo
-        Allow the user (file owner) and group members execute access to "foo"
-    chmod o+rX *
-        Allow "other"s read and maybe execute access to all files in the current directory. The capital "X" tells chmod to use a complicated set of rules for setting execute access only where it's appropriate; it generally works fairly well.
-    chmod o-rwx ~/Public
-        Disallow "other"s (mainly guests) from accessing your Public directory 
-
 Working with Text Files:
 ========================
 
@@ -99,12 +80,10 @@ grep   - search the contents of a text file, and print lines containing a given 
 
     grep telnet /etc/inetd.config
         search the inetd.conf file, and print all lines that contain "telnet".
-    grep diskarbitrationd /var/log/system.log
-        search the main system log for entries that mention the disk arbitration daemon.
     ps -ax | grep netinfod
         use the ps command to generate a list of processes running on the system, then pipe the list through grep, which will print only those lines containing "netinfod". Note: this will list all runing netinfod processes, and also list the process running grep itself. 
 
-vi and emacs   - other text editors provided with the standard OS X installation. They're both more powerful than pico, but also a lot harder to figure out if you aren't already familiar with them.
+vi and emacs   - other text editors provided with the standard *nix installation. They're both more powerful than pico, but also a lot harder to figure out if you aren't already familiar with them.
 
 tail   - print the last few lines of a text file. This is mainly useful for examining the last (i.e. most recent) entries in things like log files.
 
