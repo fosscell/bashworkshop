@@ -154,15 +154,6 @@ find   - Scan a directory structure for files matching certain criteria, and eit
     find . -mtime -2
         Search the current directory and all subdirectories for files modified within the last 2 days. 
 
-locate   - Scan a database for files with a given name, and print their names. Faster than find, but requires that the database be built in advance (and be up to date).
-
-    Examples:
-
-    sudo /usr/libexec/locate.updatedb
-        Switch to root (see sudo) and build/update the database. 
-    locate foo
-        Search the database for files with names containing "foo", or in folders with names containing "foo", and print their paths.
-
 Administration Commands
 =======================
 
