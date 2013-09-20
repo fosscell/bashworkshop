@@ -1,3 +1,5 @@
+## bash script to simulate uniq command also to introduce the concept of loops, conditional statements etc.
+
 #!/bin/bash
 
 prev=""
