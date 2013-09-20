@@ -118,3 +118,30 @@ tail   - print the last few lines of a text file. This is mainly useful for exam
         print the last screenful of entries from the main system log.
     tail -1000 /var/log/system.log | more
         print the last 1000 entries from the main system log, using more to display them one screenful at a time.
+Pipes and Rediretion
+====================
+
+>   - Redirect output from a command to a file on disk. Note: if the file already exist, it will be erased and overwritten without warning, so be careful.
+
+    Example:
+
+    ps -ax > processes.txt
+        Use the ps command to get a list of processes running on the system, and store the output in a file named processes.txt 
+
+>>   - Append output from a command to an existing file on disk.
+
+    Example:
+
+    ps -ax >> processes.txt
+        Tack the current process list onto the end of the file processes.txt 
+
+<   - Read a command's input from a disk file, rather than the user. Be careful not to type ">" by mistake, or you'll erase the contents of the file you're trying to read from.
+
+
+|   - Pass the output of one command to another for further processing.
+
+    Examples:
+
+    ps -ax | grep Finder
+        Use the ps command to get a list of processes running on the system, and pass the list to grep to search for lines containing "Finder". (Usually, it'll find two: the Finder, and the processes executing grep Finder.)
+ 
