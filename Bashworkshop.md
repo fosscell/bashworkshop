@@ -29,10 +29,6 @@ ls   - List the files in the current directory, and (optionally) their character
         (long) list the files with their characteristics (size, privs, owner, etc)
     ls -a
         list all files in the current directory (including those that would normally be invisible)
-    ls *.jpg
-        list the names of all files with names ending in ".jpg"
-    ls a*
-        list the names of all files with names beginning with "a"
     ls *att*
         list the names of all files with names containing "att" 
         
