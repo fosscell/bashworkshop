@@ -141,45 +141,4 @@ Pipes and Rediretion
 
     ps -ax | grep Finder
         Use the ps command to get a list of processes running on the system, and pass the list to grep to search for lines containing "Finder". (Usually, it'll find two: the Finder, and the processes executing grep Finder.)
-
-tee   - Used in the middle of a pipeline, this command allows you to both redirect output to a file, and pass it to further commands in the pipeline.
-
-    Examples:
-
-    ps -ax | tee processes.txt | more
-        Use the ps command to get a list of processes running on the system, store it in the file processes.txt, and also pass it to more to display it one screen at a time.
-
-Miscellaneous:
-==============
-
-man   - display online documentation ("manual pages") for a command.
-
-    Example:
-
-    man ls
-        displays detailed documentation on the ls command 
-
-apropos   - list the manual pages relating to a particular keyword.
-
-    Example:
-
-    apropos file
-        list manual pages that mention "file" in their summary line. 
-
-find   - Scan a directory structure for files matching certain criteria, and either print their names or do nearly anything else with them. 
-
-    Examples:
-
-    find / -name foo
-        Search the entire file structure (including all mounted volumes) for files named exactly "foo", and print their paths.
-    find . -mtime -2
-        Search the current directory and all subdirectories for files modified within the last 2 days. 
-
-locate   - Scan a database for files with a given name, and print their names. Faster than find, but requires that the database be built in advance (and be up to date).
-
-    Examples:
-
-    sudo /usr/libexec/locate.updatedb
-        Switch to root (see sudo) and build/update the database. 
-    locate foo
-        Search the database for files with names containing "foo", or in folders with names containing "foo", and print their paths.
+ 
