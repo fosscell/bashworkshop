@@ -183,3 +183,28 @@ locate   - Scan a database for files with a given name, and print their names. F
         Switch to root (see sudo) and build/update the database. 
     locate foo
         Search the database for files with names containing "foo", or in folders with names containing "foo", and print their paths.
+
+Administration Commands
+=======================
+
+kill   - Kill (or send other signals to) a process
+
+    Examples:
+
+    kill 220
+        Terminate process #220
+    kill -9 220
+        Terminate process #220 with extreme prejudice
+
+su   - Set user. Allows you to temporarily become another user (root is the default). It'll ask for that user's password. Use the "exit" command to go back to normal.
+
+    Note:
+
+        You must be a member of the "wheel" group to su to root. Use sudo instead. 
+
+sudo   - Set user and do. Execute a single command as another user (root is the default). It will ask for your password. Access is controlled by a configuration file and can be made quite complex (see the man page). By default, any administrator use sudo to perform any command as any user.
+
+    Examples:
+
+    sudo rm /private/var/db/.AppleSetupDone
+        Become root just long enough to delete one file.
