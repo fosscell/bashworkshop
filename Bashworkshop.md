@@ -84,4 +84,37 @@ chmod   - Change protection mode on files and folders. It's rather complex, so r
         Allow "other"s read and maybe execute access to all files in the current directory. The capital "X" tells chmod to use a complicated set of rules for setting execute access only where it's appropriate; it generally works fairly well.
     chmod o-rwx ~/Public
         Disallow "other"s (mainly guests) from accessing your Public directory 
-      
+
+Working with Text Files:
+========================
+
+more and less   - display the contents of a text file, one screenful at a time (hit the spacebar to get the next screen). Note that this only works well with plain text files, not Word files, RTF's, PDF's, or anything else that contains formatting information. less also allows you to go backwards (type "b") in the file. In either one, type "h" for more detailed help.
+
+    Examples:
+
+    more /etc/inetd.config
+        print the inetd.conf file to the terminal, one screen at a time.
+    ps -ax | more
+        use the ps command to generate a list of processes running on the system, and pipe them to more to display them one screen at a time. 
+
+grep   - search the contents of a text file, and print lines containing a given word or pattern.
+
+    Examples:
+
+    grep telnet /etc/inetd.config
+        search the inetd.conf file, and print all lines that contain "telnet".
+    grep diskarbitrationd /var/log/system.log
+        search the main system log for entries that mention the disk arbitration daemon.
+    ps -ax | grep netinfod
+        use the ps command to generate a list of processes running on the system, then pipe the list through grep, which will print only those lines containing "netinfod". Note: this will list all runing netinfod processes, and also list the process running grep itself. 
+
+vi and emacs   - other text editors provided with the standard OS X installation. They're both more powerful than pico, but also a lot harder to figure out if you aren't already familiar with them.
+
+tail   - print the last few lines of a text file. This is mainly useful for examining the last (i.e. most recent) entries in things like log files.
+
+    Examples:
+
+    tail /var/log/system.log
+        print the last screenful of entries from the main system log.
+    tail -1000 /var/log/system.log | more
+        print the last 1000 entries from the main system log, using more to display them one screenful at a time.
