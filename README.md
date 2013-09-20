@@ -1,4 +1,4 @@
 bashworkshop
 ============
 
-Handout
+Handout for participants
