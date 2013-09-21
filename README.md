@@ -1,5 +1,6 @@
 Bash Workshop
 =============
+> Learn bash using examples 
 
 [Handout for participants](https://github.com/fosscell/bashworkshop/blob/master/Bashworkshop.md)
 
