@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#A very simple dictionary inside terminal 
+#A very simple pronunciation tool l
 
 #Creating a temp folder 
 dir=~/.dict
@@ -23,11 +23,25 @@ m=$(cat $file | grep -Po '//upload.*.ogg' | grep -v type)
 #saving the error code 
 k=$(echo $?)
 
+#download the file 
 wget -q -O $dir/$1.ogg http:$m 
-mplayer $dir/$1.ogg
+
+ans="y"
+
+#while loop 
+while [[ $ans =~ "y" ]]
+do
+    #mplayer is one of the default audio player in linux
+    mplayer $dir/$1.ogg
+    
+    echo "do you want me to play it again [y] / [n] ? "
+    
+    #read user input
+    read ans
+done
+
+#remove the file from temp folder
 rm $dir/$1.ogg
-#echoing
-#echo "Meaning of the word "$1" is"$m
 
 #checks if the word was actually available else throws an error
 if [[ $k -gt 0 ]]; 
@@ -35,3 +49,5 @@ then
     echo ".........oops, cant find word "$1;
 fi
 
+#Exit 
+echo -e "\n Exitting ...\n"
