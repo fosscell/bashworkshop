@@ -29,7 +29,7 @@ wget -q -O $dir/$1.ogg http:$m
 ans="y"
 
 #while loop 
-while [[ $ans =~ "y" ]]
+while [[ $ans =~ [yY].* ]]
 do
     #mplayer is one of the default audio player in linux
     mplayer $dir/$1.ogg
