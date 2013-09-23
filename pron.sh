@@ -1,5 +1,4 @@
 #!/bin/bash
-
 #A very simple pronunciation tool l
 
 #Creating a temp folder 
@@ -23,16 +22,24 @@ m=$(cat $file | grep -Po '//upload.*.ogg' | grep -v type)
 #saving the error code 
 k=$(echo $?)
 
+#checks if the word was actually available else throws an error
+if [[ $k -gt 0 ]];
+then 
+    echo ".........oops, cant find word "$1;
+    return
+fi
+
 #download the file 
 wget -q -O $dir/$1.ogg http:$m 
 
 ans="y"
 
 #while loop 
-while [[ $ans =~ [yY].* ]]
+#while [[ $ans =~ [yY].* ]]
+while [[ $ans == y ]]
 do
     #mplayer is one of the default audio player in linux
-    mplayer $dir/$1.ogg
+    mplayer $dir/$1.ogg 2>/dev/null 1>/dev/null
     
     echo "do you want me to play it again [y] / [n] ? "
     
@@ -43,11 +50,6 @@ done
 #remove the file from temp folder
 rm $dir/$1.ogg
 
-#checks if the word was actually available else throws an error
-if [[ $k -gt 0 ]]; 
-then 
-    echo ".........oops, cant find word "$1;
-fi
 
 #Exit 
 echo -e "\n Exitting ...\n"
