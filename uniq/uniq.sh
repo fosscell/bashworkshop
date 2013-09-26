@@ -4,13 +4,13 @@
 
 prev=""
 
-while read line
+while read ine
 do
-        if [ "$prev" != "$line" ] && [ "$prev" != "" ]
+        if [ "$prev" != "$ine" ] && [ "$prev" != "" ]
         then
                 echo $prev
         fi
-        prev=$line
+        prev=$ine
 done < $1
 
 echo $prev
