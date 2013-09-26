@@ -2,15 +2,20 @@
 
 #!/bin/bash
 
+## to keep track of the previous input line
 prev=""
 
-while read ine
+## while loop continues till the whole input is read line by line
+while read line         
 do
-        if [ "$prev" != "$ine" ] && [ "$prev" != "" ]
+        ## checks if the previous input is same as the current input
+        if [ "$prev" != "$line" ] && [ "$prev" != "" ]          
         then
-                echo $prev
+                ## print the uniq input to standard output
+                echo $prev      
         fi
         prev=$ine
-done < $1
+        ## updates the prev variable
+done < $1       ## giving the file as input
 
-echo $prev
+echo $prev      ## echo the last uniq line
