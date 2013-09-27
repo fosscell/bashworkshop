@@ -42,6 +42,8 @@ Variables:
             a="Hello World"   //Correct  
             a ="Hello world"  //Wrong !!
             a= "hello world"  //Wrong !!
+        - you will have to use a $ symbol in front of the variable to make bash understand that its a variable
+        
     String
         - represented by anything inside double quotes
         - Example:
@@ -56,6 +58,12 @@ Variables:
         a=
         a=""
  
+Quotes
+======
+		
+		"Double Quotes" - Anything enclose in double quotes removed meaning of that Double Quotes characters (except \ and $).
+		'Single quotes' - Enclosed in single quotes remains unchanged.
+		`Back quote` - echo "todays date is `date` "To execute command 			//usually the key above tab
 
 I/P and O/P
 ===========
@@ -65,6 +73,7 @@ I/P and O/P
         Example:
             echo "sudev"
             echo $HOME
+            echo $a			
 
     read command
         //scanf in bash 
