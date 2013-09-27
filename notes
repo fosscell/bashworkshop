@@ -3,7 +3,7 @@ Why / where / when scripting ?
     * small scale programs/automation
     * super-set of this language is the programming language(ex: C++, Python)
     * ex: Bash, Python
-    $$ shells:
+    ** shells:
         * bash, csh, tsh, zsh
         * /etc/shells
 
