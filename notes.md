@@ -114,7 +114,7 @@ Regular Expression
 Shell Arithmetic 
 ================
 		
-		expr  //not so important in scripting  
+		expr
 				
 				expr is used to evaluate an expression in bash.
 				Example 
@@ -123,8 +123,14 @@ Shell Arithmetic
 					epxr 8/ 2											//wont work, space problems 
 					expr 8 / $(expr 4 \* 2) 			//you has to be carefull with this like 
 																				// escaping some wildchars and again $() to evaluate individual expr's
-		Let 
 		
+    Let
+
+        Let is used in a similar fashion as expr, small change in the syntax
+        Example                                        
+                
+                let "m = 3 + 34 - $t" // spaces within 
+                the double quotes are not an issue
 																								
 Conditional loop
 ================    
