@@ -89,13 +89,27 @@ Lets write hello world
 		
 		Method 2 //write the same thing in terminal 		
 
+	Note:
+		Using the #!/bin/bash shebang line.
+		Reason - It's a convention so the *nix shell knows what kind of interpreter to run.
+		Even today (where most systems run "bash", the "Bourne Again Shell"), scripts can be in bash, python, perl, ruby, PHP, etc, etc. For example, 	  you might see "!/bin/perl" or "/bin/perl5".
+		PPS: Remember - under *nix, associating a suffix with a file type is merely a convention, not a "rule". An "executable" can be a binary 			  program, any one of a million script types and other things as well. Hence the need for "#!/bin/bash".
+
 Regular Expression 
 ==================
 
     Wild cards
         - "*" - denotes everything
+        		Example:
+        		ls * 					//Displays all the files 
+        		ls a*b				//all the files starting with a and ending with b 
         - "?" - denotes the presence the charactor just preceding it
-        - "." - denotes a single charactor
+        		Example:
+        		ls a?					//all files with starts with a and with only two characters 
+       
+       Regular Expression - http://www.tldp.org/LDP/GNU-Linux-Tools-Summary/html/x11655.htm
+        		
+        		
     
 Shell Arithmetic 
 ================
