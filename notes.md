@@ -129,9 +129,38 @@ Shell Arithmetic
         Let is used in a similar fashion as expr, small change in the syntax
         Example                                        
                 
-                let "m = 3 + 34 - $t" // spaces within 
-                the double quotes are not an issue
-																								
+                let "m = 3 + 34 - $t" // spaces within the double quotes are not an issue
+	 
+	 	Test 
+	 			
+	 			[[ ]] 
+	 			
+	 			use this to do all the testing conditions 
+	 			
+	 			like to check if a variable "ab" is greater than 10
+	 			
+	 			[[ $ab -gt 10 ]] 
+	 			
+	 			operations -gt -lt -eq -ne -ge -le 
+	 	
+	 
+																										
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Conditional loop
 ================    
     if
@@ -172,3 +201,6 @@ Conditional loop
         - for default part:
                 patter can be given as "-" ==> which returns true for all
                 arguements other than the ones given in the above cases
+                
+
+
