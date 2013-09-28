@@ -1,6 +1,6 @@
 #!/bin/bash -xv
 
-#Checking if the user has passed any argument by the user 
+#Checking if the user has passed any argument 
 # $# variable outputs the total no of arguments given by the user 
 (($#)) || { echo -e "Please check your argument \nUsage ./zipo [-x | -c ] <zip-file-name>" >&2; exit 1;}
 
