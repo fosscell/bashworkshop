@@ -143,13 +143,27 @@ Shell Arithmetic
 	 			
 	 			operations -gt -lt -eq -ne -ge -le 
 	 	
-	 
+
+Commandline Arguements
+======================
 																										
+    input is given as <script name> arg1 arg2 arg3....
+
+    inside the script arg1, arg2, arg3 all can be accessed using the variables
+    $1, $2, $3, etc respectively
+
+    by default $0 is represented by the script name
+
+    all the arguements can be collectively accessed using the variable $@
+
+    Example:
+        
+        look at the uniq.sh 
 
 
 
-
-
+CUT
+===
 
 
 
@@ -162,7 +176,8 @@ Shell Arithmetic
 
 
 Conditional loop
-================    
+================
+
     if
         - syntax:
           if <condition>
