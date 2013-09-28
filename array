@@ -1,11 +1,11 @@
-
+#!/bin/bash -xv
 array=(`ls`)
 len=${#array[*]}
-echo "The array has $len items and the c files in are:"
+echo "The array has $len items and the sh files in this folder are:"
 k=1
 i=0
 while [ $i -lt $len ]; do
-            if [[ $i =~ *."$1" ]]
+            if [[ ${array[$i]} == *."$1" ]]
             then 
             echo "$k: ${array[$i]}"
             let k++
