@@ -211,4 +211,15 @@ PART IV
         * learn to read a bash script
         * built large programs from prototypes(small programs which do not
           consider all test cases)
-        * learn how different commands wor
+        * learn how different commands work
+
+    Programs to be discussed:
+
+        * timer.sh
+        * uniq
+        * zipo.sh
+        * licenser.sh
+        * dictionary.sh
+        * pron.sh
+        * debug
+        
