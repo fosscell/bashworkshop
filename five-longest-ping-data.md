@@ -24,7 +24,7 @@ Extracting the required data
 	using awk and cut,
 	
 	awk '{print $8}' tmp
-	
+        http://www.grymoire.com/Unix/Awk.html	
 		awk is rather a programing language specilized in manupilating text files
 		here awk is used to printout only the coloumn no 8 of the text file named 'tmp'
 		
