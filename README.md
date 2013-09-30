@@ -1,12 +1,11 @@
 Bash Workshop
 =============
-> Learn bash using examples 
 
+We are trying to make a proper document roadmap for bash scripting so expect for improvements 
+in the following document.
+
+All the scripts in this repo will be discussed in coming session.
+
+ 
 [Handout for participants](https://github.com/fosscell/bashworkshop/blob/master/Bashworkshop.md)
-
-[Finding five longest ping response time](https://github.com/fosscell/bashworkshop/blob/master/five-longest-ping-data.md)
-
-[A simple Dictionary Script](https://github.com/fosscell/bashworkshop/blob/master/dictionary.sh)
-
-[Implementaion of uniq using bash](https://github.com/fosscell/bashworkshop/blob/master/uniq/uniq.sh)
 

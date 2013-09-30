@@ -1,0 +1,12 @@
+start
+        * test the uniq command
+        * redirect the test input to uniq
+        * analyze the output that only the adjacent repeating values are
+          processed
+
+
+next step
+        * show the source code ==> make them write it
+        * tell them about the basics of looping and conditional statements
+        * file redirection
+        * command line arguments ( $1 $@ $2 ...)

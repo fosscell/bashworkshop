@@ -23,14 +23,14 @@ Types of Shells
 Variables:
 ==========
      
-     System Variables and Enviornment 
+     System Variables and Environment 
         Very commonly used variables maintained by shell, represented with capital letters 
         env command to get a list of all system variables.
         Example:
                 $HOME
                 $RANDOM
 
-    Loosly typed
+    Loosely typed
         - need not specify data type during variable declaration
         Example :
             i=5         // i will hold an integer value now 
@@ -144,7 +144,7 @@ Shell Arithmetic
 	 			operations -gt -lt -eq -ne -ge -le 
 	 	
 
-Commandline Arguements
+Command line Arguments
 ======================
 																										
     input is given as <script name> arg1 arg2 arg3....

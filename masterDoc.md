@@ -4,8 +4,8 @@ PART I
 What is a Shell ?
 =================
 
-    - its an interpretter to pass commands given by user to the kernel
-    - commands can be excuted line by line
+    - its an interpreter to pass commands given by user to the kernel
+    - commands can be executed line by line
     - there are different types of shells
 
 Types of Shells
@@ -38,7 +38,7 @@ PART II
 where / when / what scripting ?
 ===============================
 
-    - many single line commands can be grouped togather and put into a single file called script
+    - many single line commands can be grouped together and put into a single file called script
     - when the script is an input to a shell its called shell script and here specifically its called bash scripting as the shell is bash
     -	mostly in interpreted language
     -	small scale programs/automation
@@ -57,14 +57,14 @@ Why to Write Shell Script ?
 Variables:
 ==========
      
-     System Variables and Enviornment 
+     System Variables and Environment 
         Very commonly used variables maintained by shell, represented with capital letters 
         env command to get a list of all system variables.
         Example:
                 $HOME
                 $RANDOM
 
-    Loosly typed
+    Loosely typed
         - need not specify data type during variable declaration
         Example :
             i=5         // i will hold an integer value now 
@@ -189,7 +189,7 @@ Shell Arithmetic
 	 			operations -gt -lt -eq -ne -ge -le 
 	 	
 
-Commandline Arguements
+Command line Arguments
 ======================
 																										
     input is given as <script name> arg1 arg2 arg3....
