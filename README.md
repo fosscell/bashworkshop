@@ -8,4 +8,4 @@ All the scripts in this repo will be discussed in coming session.
 
  
 [Handout for participants](https://github.com/fosscell/bashworkshop/blob/master/Bashworkshop.md)
-
+[Some interesting links](https://github.com/fosscell/bashworkshop/blob/master/links.md)
