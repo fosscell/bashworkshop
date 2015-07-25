@@ -14,7 +14,7 @@ do
                 ## print the uniq input to standard output
                 echo $prev      
         fi
-        prev=$ine
+        prev=$line
         ## updates the prev variable
 done < $1       ## giving the file as input
 
