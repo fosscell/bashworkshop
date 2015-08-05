@@ -94,7 +94,7 @@ tail   - print the last few lines of a text file. This is mainly useful for exam
     tail -1000 /var/log/system.log | more
         print the last 1000 entries from the main system log, using more to display them one screenful at a time.
 
-Pipes and Rediretion
+Pipes and Redirection
 ====================
 
 `` > ``   - Redirect output from a command to a file on disk. Note: if the file already exist, it will be erased and overwritten without warning, so be careful.
